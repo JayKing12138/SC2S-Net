@@ -37,9 +37,9 @@ class Config:
     # MODEL = "UNETR"#  UNet_RCC UNet_Pytorch_Atten_DeepSup UNet_Pytorch_Atten_Shuffle_DeepSup  UNet_Pytorch_DeepSup
     # MODEL = "TransUNet"#  UNet_RCC UNet_Pytorch_Atten_DeepSup UNet_Pytorch_Atten_Shuffle_DeepSup  UNet_Pytorch_DeepSup
     MODEL = "UNet_Pytorch_DeepSup_Sam2"#  UNet_RCC UNet_Pytorch_Atten_DeepSup UNet_Pytorch_Atten_Shuffle_DeepSup  UNet_Pytorch_DeepSup
-    # LOAD_WEIGHTS = False # FalseFalse
-    LOAD_WEIGHTS = True # FalseFalse
-    WEIGHTS_PATH = "/data/userdisk1/crq/TractSeg/hcp_exp_5/HCP_TEST_x6/best_weights_ep12.npz"
+    LOAD_WEIGHTS = False # FalseFalse
+    # LOAD_WEIGHTS = True # FalseFalse
+    WEIGHTS_PATH = "/data/userdisk1/crq/TractSeg/hcp_exp_5/HCP_TEST_x6/best_weights_ep120.npz"
 
     SLICE_DIRECTION = "y"  # x | y | z  ("combined" needs z)  y
     TRAINING_SLICE_DIRECTION = "xyz"  # y | xyz

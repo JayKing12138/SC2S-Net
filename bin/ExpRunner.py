@@ -63,8 +63,8 @@ def main():
     parser.add_argument("--config", metavar="name", help="Name of configuration to use")
     parser.add_argument("--train", metavar="True/False", help="Train network",
                         # type=distutils.util.strtobool)
-                        type=distutils.util.strtobool, default=False)
-                        # type=distutils.util.strtobool, default=True)
+                        # type=distutils.util.strtobool, default=False)
+                        type=distutils.util.strtobool, default=True)
     parser.add_argument("--test", metavar="True/False", help="Test network",
                         # type=distutils.util.strtobool)
                         # type=distutils.util.strtobool, default=True)
