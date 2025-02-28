@@ -1,11 +1,3 @@
-# --------------------------------------------------------
-# TinyViT Model Architecture
-# Copyright (c) 2022 Microsoft
-# Adapted from LeViT and Swin Transformer
-#   LeViT: (https://github.com/facebookresearch/levit)
-#   Swin: (https://github.com/microsoft/swin-transformer)
-# Build the TinyViT Model
-# --------------------------------------------------------
 
 import itertools
 import torch
@@ -756,24 +748,3 @@ class TinyViT(nn.Module):
         return x
     
 
-    
-# from torchstat import stat
-# device = torch.device("cuda:0") 
-# image_encoder=TinyViT(img_size=64, in_chans=160, num_classes=0,
-#     # embed_dims=[64, 128, 160, 320],
-#     # depths=[2, 2, 6, 2],
-#     # num_heads=[2, 4, 5, 10],
-#     # window_sizes=[7, 7, 14, 7],
-#     embed_dims=[160, 320],
-#     depths=[2, 2],
-#     num_heads=[5, 10],
-#     window_sizes=[14, 7],
-#     mlp_ratio=4.,
-#     drop_rate=0.,
-#     drop_path_rate=0.0,
-#     use_checkpoint=False,
-#     mbconv_expand_ratio=4.0,
-#     local_conv_size=3,
-#     layer_lr_decay=0.8
-# )
-# print(stat(image_encoder, (160, 64, 64)))

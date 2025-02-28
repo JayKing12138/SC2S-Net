@@ -573,7 +573,3 @@ def important_token_selection(key_layer, value_layer, attention_probs, token_rat
     highlights = highlights.unsqueeze(-1).repeat(1, 1, 1, key_layer.shape[-1])
     k_highlights = torch.gather(key_layer, dim=-2, index=highlights)
     v_highlights = torch.gather(value_layer, dim=-2, index=highlights)
-# from torchstat import stat
-# device = torch.device("cuda:0") 
-# model = UNet_Pytorch_DeepSup()
-# print(stat(model, (9, 144, 144)))
