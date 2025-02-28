@@ -7,25 +7,19 @@ Accurate segmentation of the corpus callosum (CC) is crucial for the quantitativ
 ![Alt text](figures/Overview.png)
 
 ## 3. Training Procedure
-### 3.0 Setting Environments
+### 3.1 Setting Environments
 Create and activate conda environment named SC2SNet from requirements.txt.
 ```
 conda create -n SC2S-Net python=3.10
 pip install -r requirements.txt
 conda activate SC2S-Net
 ```
-### 3.1 Datasets
-Users can download the dataset used in this project in the following locations:
-https://drive.google.com/file/d/1hFWFEnUb4IjtstZVT5HF8R1hyzxsi6E7/view?usp=sharing
+
 ### 3.2 Training
 #### Preparing
 First, you should confirm the training configuration in /SC2S-Net/tractseg/experiments/base.py.
 #### Training Model
-After entering the SC2S-Net folder, you can run
-```
-python SC2S-Net/bin/ExpRunner.py
-```
-to train the model by youself. After training, model checkpoints and experimental results will be saved in the path set by the user.
+The codes of methods used in the project are in /SC2S-Net/models.
 
 ## Acknowledgements
 The authors have no conflict of interest to declare.
