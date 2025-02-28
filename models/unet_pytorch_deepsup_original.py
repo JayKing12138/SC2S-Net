@@ -6,6 +6,7 @@ from __future__ import print_function
 import torch
 import torch.nn as nn
 
+
 from tractseg.libs.pytorch_utils import conv2d
 from tractseg.libs.pytorch_utils import deconv2d
 
