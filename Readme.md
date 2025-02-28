@@ -16,9 +16,7 @@ conda activate SC2S-Net
 ```
 
 ### 3.2 Training
-#### Preparing
-First, you should confirm the training configuration in /SC2S-Net/tractseg/experiments/base.py.
-#### Training Model
+
 The codes of methods used in the project are in /SC2S-Net/models.
 
 ## Acknowledgements
